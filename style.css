@@ -1,0 +1,179 @@
+
+body {
+     background-color: rgb(39, 14, 14);
+    color:rgb(236, 234, 234);
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    font-size: larger;    
+}
+
+.header{
+    display: flex;
+    background-color: rgb(107, 223, 223);
+     text-align: center;
+     padding: 0px;
+     margin: 0px;
+     flex-direction: column;
+     font-size: 100;
+     flex-wrap: wrap;
+
+}
+.header > h1 {
+ color: rgb(12, 12, 11);
+  font-family: "Lobster", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0px;
+}
+
+.bodyofcontacts {
+    display: flex;
+    justify-content:center;
+    
+    border: 10px solid white;
+    min-height:fit-content;
+    flex-direction: column;   
+    min-width:10px;
+    margin:auto;
+    flex-grow: 1;
+    max-width:fit-content;
+    border-radius: 30px;
+    background-color: rgb(28, 72, 57);
+}
+
+
+
+    
+
+.navigation, a {
+ text-decoration: none;
+ color: rgb(21, 21, 172);
+background-color: rgb(58, 126, 111);
+}
+.navbuttonslistgroup > li {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    margin: 0px;
+    align-item: right;
+    justify-content: right;
+    flex-direction: row;
+}
+.navbuttonslistgroup{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+    
+}
+.navigation{
+    flex-direction: row;
+    flex-direction: column;
+}
+.navbuttonslistgroup > li:hover{
+    font-size: 20px;
+    background-color: rgb(161, 129, 184);
+}
+.briefproject, .briefabout, .briefcontact, .skillsandstacks, .skillsandstacks  {
+ background-color: rgb(35, 34, 55); 
+ margin: 10px;
+ border-radius: 40px;
+ text-align: center;
+ max-width:none;
+ font-size: larger;
+}
+.briefabout {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+}
+#contactme {
+    display: flex;
+    color:rgb(150, 150, 183);
+    background-color: rgb(35, 34, 55);
+    gap: 5px;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;    
+}
+#profilepic {
+    border-radius: 10px;
+}
+.skillsandstacks > li {
+list-style: none;
+padding: 10px;
+}
+.briefabout{   
+    align-items: center;
+    gap: 20px;
+    display:flex;
+    text-align:right;
+ 
+}
+#project1, #project2, #project3 {
+    border: 5px solid rgb(115, 115, 211);
+    border-radius: 10px;
+    margin: 10px;
+    paddding: 10px;
+    background-color: rgb(38, 38, 74);
+    color: rgb(201, 197, 197);
+}
+
+#form > #username, #message, #inputnumber{
+    display: block;
+    border: 10px solid none;
+    margin: 10px;
+}
+#form {
+    font-size: 40px;
+}
+#cont {
+    display: flex;
+ text-align: left;
+margin: 0;
+padding: 0px;
+font-size: 30px;
+display: block;
+}
+.mainforhome {
+ 
+}
+
+.skillsandstacks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.devopstext {
+    display: grid;
+}
+.csstext {
+    display: grid;
+    grid-row-start: 4;
+}
+.htmltext{
+    display: grid;
+    grid-row-start: 3 ;
+
+}
+.javatext {
+    display: grid;
+    grid-row-start: 2;
+}
+
+
+.skillsandstacks > section > img {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}

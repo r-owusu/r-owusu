@@ -4,32 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>About Revic Osei Owusu</h1>
-        <ul>      
+<body class="bodyforhome">
+            
+    <header class="header">
+        <h1><em>Revic's</em> Portfolio</h1>
+        <nav class="navigation">
+        <ul class="navbuttonslistgroup">      
             <li><a href="index.html">Home</a></li>
-            <li><a href="contacts.html">Contact Revic</a></li>
-            <li><a href="project.html">View Projects</a></li>
             <li><a href="about.html">About Revic</a></li>
+            <li><a href="project.html">View Projects</a></li>
+            <li><a href="contacts.html">Contact Revic</a></li>
         </ul>
+        </nav>
     </header>
-
-    <h2><em style="color: rgb(117, 186, 15)">the </em><strong style="color: rgb(12, 81, 50);"> Revic Osei Owusu</strong> <em style="color: rgb(117, 186, 15);"> portfolio</em></h2>
-    <h2>Country: Ghana</h2>
-    <h2>Skills</h2>
-    <ul type="square">
-        <li>Html</li>
-        <li>Css</li>
+    <article class="mainforhome">
+<section class="briefabout">
+    <img src="Images/picture.jpeg" alt="Revic Osei Owusu" width="190" height="200" id="profilepic">
+   <p class="about"><em><strong>Revic Osei Owusu, </strong></em>A passionate university student passionate about causing impact in the Ghanaian society. </p>
     </ul>
-    <a href="contacts.html">Contact Revic</a>
-<img src="picture.jpeg" alt="Revic Osei Owusu" width="190" height="200">
-<footer>
-    <h3>        
-        University Student | Web Developer | Tech Enthusiast
-    </h3>
-</footer>
+    <a href="contacts.html" id="contactme">Contact Revic</a>
+</section>
+<section class="skillsandstacks">
+    <section class="devopstext"> <p>DevOps</p></section>
+    <section class="htmltext">HTML</section>
+        <section class="csstext"><p>CSS</p></section>
+        <section class="javatext"><p>Java </p></section>
+          <section class="devopspic"><img src="Images/devOps.png" width="45" style="display: block"></section>
+       <section class="htmlpic"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" width="45"  style="display: block"></section>
+      <section class="csspic">  <img   style="display: block" src="data:image/png;base64,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" width="45"></section>
+       <section class="Javapic"> <img   style="display: block" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/656px-Java_programming_language_logo.svg.png" width="45">
+        </section>      
+</section>
 
+<section class="briefproject">
+    <h2>My projects</h2>
+    <p>
+         <h2>Skills and Stacks</h2>
+Got it 👍. I’ll generate a **1000-word random text** for you. Since you didn’t specify a theme, I’ll make it a flowing, abstract, story-like text with no particular direction—just random enough to fill the word count.
+
+---
+
+### 1000-Word Random Text
+
+The early morning light drifted lazily across the fields, touching each blade of grass with a shimmer that looked almost like liquid silver. Birds stirred from their nests, feathers ruffling as if they were reluctant to begin another day. A faint mist hovered in the valley, clinging stubbornly to the earth, refusing to vanish until the sun climbed high enough to command it away. Somewhere in the distance, a bell chimed, not from a clock tower or a church, but from a wandering traveler who carried a string of bells tied to his pack. He walked slowly, every step deliberate, as though the ground itself were a fragile sheet of glass that could crack under his weight.
+
+He passed a farmhouse where a woman sat on the porch, sipping tea from a mug painted with blue swirls. She did not wave, nor did she smile, but she observed him with a curiosity that was neither friendly nor hostile—simply present, like the way one looks at a cloud passing across the sky. The man adjusted the strap of his pack and kept walking, bells jingling faintly. Behind the farmhouse, a dog barked once, then fell silent, perhaps recognizing that the traveler carried no threat.
+
+
+    </p>
+    <p>
+
+        
+    </p>
+
+</section>
+<section class="briefcontact">
+<h1>Want to contact me ?</h1>
+<p>I am available on various platforms for contact. Instagram, LinkedIn, 
+    WhatsApp, Telegram and Discord.
+    Click here to view them.
+</p>
+</section>
+<section>
+### 1000-Word Random Text
+
+The early morning light drifted lazily across the fields, touching each blade of grass with a shimmer that looked almost like liquid silver. Birds stirred from their nests, feathers ruffling as if they were reluctant to begin another day. A faint mist hovered in the valley, clinging stubbornly to the earth, refusing to vanish until the sun climbed high enough to command it away. Somewhere in the distance, a bell chimed, not from a clock tower or a church, but from a wandering traveler who carried a string of bells tied to his pack. He walked slowly, every step deliberate, as though the ground itself were a fragile sheet of glass that could crack under his weight.
+
+He passed a farmhouse where a woman sat on the porch, sipping tea from a mug painted with blue swirls. She did not wave, nor did she smile, but she observed him with a curiosity that was neither friendly nor hostile—simply present, like the way one looks at a cloud passing across the sky. The man adjusted the strap of his pack and kept walking, bells jingling faintly. Behind the farmhouse, a dog barked once, then fell silent, perhaps recognizing that the traveler carried no threat.
+</section>
+</article>
+<footer>
+      <p>All rights reserved. Revic Osei Owuusu</p>
+</footer> 
 </body>
 </html>
