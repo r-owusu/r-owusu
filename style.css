@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
     margin: 0%;
     padding: 0%;
-   font-size: 50px;;    
+   font-size: 80px;;    
 }
 
 .header{
@@ -15,7 +15,7 @@ body {
      padding: 0px;
      margin: 0px;
      flex-direction: column;
-     font-size: 100;
+     font-size: 100px;
      flex-wrap: wrap;
      font-size: 60px;
 
@@ -43,10 +43,10 @@ border: 0px;
 .navbuttonslistgroup > li {
     list-style: none;
     display: flex;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
     color: black;
-    font-size: 60%;
+    font-size: 80px;
     text-align: right;
     margin: 0px;
     align-item: right;
@@ -62,7 +62,7 @@ border: 0px;
     margin: 0px;
     padding-right: 25px;
     border: 0px;
-    font-size: 70px;
+    font-size: 80px;
 }
 .navigation{
     flex-direction: row;
@@ -92,7 +92,9 @@ background-color: rgb(35, 34, 55);
 
 .briefabout {
     display: grid;
-    font-size: 70px;
+    font-size: 80px;
+    text-align: left;
+    padding-left: 40px
    
 }
 
@@ -102,8 +104,8 @@ background-color: rgb(35, 34, 55);
     display: grid;
     align-items: center;
     justify-self: center;
-    width: 500px;
-    height: 400px;
+    width: 900px;
+    height: 900px;
 margin-top: 5%;
     background-color: rgb(221, 95, 37);
     margin-bottom: 10;
@@ -153,13 +155,14 @@ padding: 10px;
  text-align: left;
 margin: 0;
 padding: 0px;
-font-size: 30px;
+font-size: 120px;
 display: block;
 }
 .mainforhome {
  display: grid;
- grid-template-columns: 450px 1fr;
- grid-template-rows:450px 800px ;
+ grid-template-columns: 900px 1fr;
+ grid-template-rows:600px 800px ;
+
 }
 
 .skillsandstacks {
@@ -249,16 +252,25 @@ display: block;
 .bodyofcontacts {
     display: flex;
     justify-content:center;    
+    align-items: center;
     border: 10px solid white;
     min-height:fit-content;
     flex-direction: column;   
     min-width:10px;
-    margin:auto;
+    margin-left:35%;
+    margin-right: 20%;
     flex-grow: 1;
-    max-width:fit-content;
+    max-width:max-content;
     border-radius: 30px;
     background-color: rgb(28, 72, 57);
 }
+
+.bodyofcontacts >section>form>label{
+ font-size: 130px;
+}
+
+
+
 #homeproject1 {
     display: flex;
     font-size: 50px;
@@ -282,3 +294,29 @@ display: block;
     height: 500px;
     padding: 20px;
 }
+footer {
+    display: grid;
+    background-color: burlywood;
+    margin: 0px;
+    padding: 0px;
+    max-height: 100%;
+    border: 0px;
+     bottom: 0 ;
+}
+footer>p{
+    bottom: 0 ;
+    margin: 0;
+    padding: 0%;
+    border: 0px;
+}
+.body {
+    background-color: rgb(14, 56, 93);
+    display: grid;
+    min-height:100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media all and (min-width:700px){
+      
+    
+} 
