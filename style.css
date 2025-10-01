@@ -7,7 +7,12 @@ body {
     padding: 0%;
    font-size: 80px;;    
 }
-
+.briefabout > p {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .header{
     display: flex;
     background-color: rgb(107, 223, 223);
@@ -40,6 +45,9 @@ margin: 0px;
 padding: 0px;
 border: 0px;
 }
+ a:hover{
+    background-color: brown;
+}
 .navbuttonslistgroup > li {
     list-style: none;
     display: flex;
@@ -52,7 +60,12 @@ border: 0px;
     align-item: right;
     justify-content: right;
     flex-direction: row;
-   
+    cursor: pointer;
+    transition: 150ms ease;
+}
+.navbuttonslistgroup > li:hover{
+    background-color: rgb(214, 77, 35);
+    scale: 1;
 }
 .navbuttonslistgroup{
     display:flex;
@@ -68,9 +81,7 @@ border: 0px;
     flex-direction: row;
     flex-direction: column;
 }
-.navbuttonslistgroup > li:hover{
-    background-color: rgb(90, 47, 34);
-}
+
 .briefproject, .briefabout, .briefcontact, .skillsandstacks, .skillsandstacks  {
 
 background-color: rgb(35, 34, 55); 
@@ -259,6 +270,7 @@ display: block;
     min-width:10px;
     margin-top:0;
     flex-grow: 1;
+    margin-left: 37%;
     max-width:max-content;
     border-radius: 30px;
     background-color: rgb(28, 72, 57);
@@ -317,7 +329,7 @@ footer>p{
 }
 
 @media all and (max-width:576px){
-    
+
 .bodyofcontacts >section>form>label{
  font-size: 30px;
 }
