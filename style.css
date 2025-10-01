@@ -307,6 +307,7 @@ footer>p{
     margin: 0;
     padding: 0%;
     border: 0px;
+    font-size: 60px;
 }
 .body {
     background-color: rgb(14, 56, 93);
@@ -316,20 +317,22 @@ footer>p{
 }
 
 @media all and (max-width:576px){
-      .header{
-        display: grid;
-      grid-template-columns: 100%;
-        background-color: brown;
-        height: 80px;
-      }
-
-      .header>h1{
-        background-color: brown;
-        height: 80px;
-        font-size:100%;
-        max-width: 100px;
-      }
-
+    
+.bodyofcontacts >section>form>label{
+ font-size: 30px;
+}
+.bodyofcontacts >section>h2{
+ font-size: 4px;
+}
+#message {
+    font-size: 10px;
+}
+.header > h1 {
+    font-size: 60px;
+}
+footer> p {
+    font-size: 40px;
+}
 
     .body{
         display: grid;
@@ -349,15 +352,21 @@ footer>p{
         display: flex;
         flex-direction: column;
     }
-.bodyofcontacts{
-    display: flex;
-    font-size: 50px;
-    text-wrap: wrap;
-}
-.bodyofcontacts >section>form>label{
- font-size: 60px;
-}
-.bodyofcontacts >section>h2{
- font-size: 60px;
-}
+
+
+    #homeproject1 > img {
+        border-radius: 39px;
+        width:840px;
+    }
+    #homeproject2 > img {
+          border-radius: 39px;
+        width:fit-content;
+    }
+    .detailedabout > p, h2 {
+        font-size: 55px;
+    }
+    .navbuttonslistgroup > li {
+        font-size: 30px;
+    }
+
 } 
