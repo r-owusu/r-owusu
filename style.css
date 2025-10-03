@@ -327,6 +327,11 @@ footer>p{
     min-height:100vh;
     grid-template-rows: auto 1fr auto;
 }
+#submit {
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+}
 
 @media all and (max-width:576px){
 
