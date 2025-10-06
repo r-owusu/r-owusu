@@ -307,7 +307,7 @@ display: block;
 }
 footer {
     display: grid;
-    background-color: burlywood;
+    background-color: rgb(23, 26, 200);
     margin: 0px;
     padding: 0px;
     max-height: 100%;
